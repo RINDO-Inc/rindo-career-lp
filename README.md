@@ -9,7 +9,7 @@
 
 ## 公開URL
 
-- **Netlify仮URL：** https://xxxxx.netlify.app/ ※Netlifyでサイトを作成後、実際のURLに差し替えてください
+- **Netlify仮URL：** https://bejewelled-kangaroo-b517c8.netlify.app/
 - **本番予定URL：** https://career.rinroad.com/
 
 ## ファイル構成
