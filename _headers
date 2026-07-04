@@ -1,0 +1,6 @@
+# 画像・フォント・CSSを長期キャッシュ（内容が変わったらファイル名を変える運用）
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/style.css
+  Cache-Control: public, max-age=604800
