@@ -54,7 +54,7 @@ a { color: inherit; }
 /* ---- ヘッダー ---- */
 .header { position: sticky; top: 0; z-index: 50; background: var(--paper-0); border-bottom: 1px solid var(--paper-200); }
 .header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px clamp(16px, 4vw, 32px); }
-.header .logo { height: clamp(24px, 3vw, 30px); }
+.header .logo { width: auto; height: clamp(24px, 3vw, 30px); }
 
 /* ---- 見出し・エディトリアル ---- */
 .eyebrow { font-family: var(--font-latin); font-weight: 700; font-size: clamp(11px, 1.2vw, 13px); letter-spacing: 0.16em; margin-bottom: 10px; color: var(--forest-600); }
@@ -157,6 +157,6 @@ a { color: inherit; }
 /* ---- フッター ---- */
 .footer { background: var(--ink-900); }
 .footer-inner { max-width: 1100px; margin: 0 auto; padding: clamp(28px, 4vw, 44px) clamp(16px, 4vw, 32px); display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
-.footer .logo { height: 26px; margin-bottom: 10px; }
+.footer .logo { width: auto; height: 26px; margin-bottom: 10px; }
 .footer p { font-size: clamp(12px, 1.3vw, 13px); line-height: 1.8; color: rgba(244,241,234,0.75); }
 .footer .copy { font-size: 11px; color: rgba(244,241,234,0.45); }
