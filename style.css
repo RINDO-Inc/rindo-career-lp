@@ -84,6 +84,7 @@ a { color: inherit; }
 .hero-col { max-width: 620px; display: flex; flex-direction: column; gap: clamp(14px, 2vw, 20px); }
 .hero-eyebrow { font-family: var(--font-latin); font-weight: 700; font-size: clamp(11px, 1.2vw, 13px); letter-spacing: 0.18em; color: var(--forest-200); }
 .hero-h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(29px, 4.4vw, 52px); line-height: 1.4; color: #fff; text-wrap: pretty; }
+.hero-h1 .hero-phrase { display: inline-block; }
 .hero-lead { font-size: clamp(14px, 1.6vw, 17px); line-height: 1.9; color: rgba(248,247,244,0.92); max-width: 560px; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
 .hero-cta .btn { flex: 1 1 240px; max-width: 400px; }
