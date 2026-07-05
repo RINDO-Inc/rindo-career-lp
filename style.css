@@ -74,10 +74,10 @@ a { color: inherit; }
 /* ---- ボタン ---- */
 .btn { display: flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 26px; border-radius: 6px; text-decoration: none; font-family: var(--font-display); font-weight: 700; transition: background 200ms ease, transform 120ms ease; }
 .btn:active { transform: translateY(1px); }
-.btn-primary { background: var(--forest-500); color: #fff; border: 1.5px solid var(--forest-500); font-size: clamp(15px, 1.6vw, 17px); }
-.btn-primary:hover { background: var(--forest-600); border-color: var(--forest-600); }
+.btn-primary { background: #E36900; color: #fff; border: 1.5px solid #E36900; font-size: clamp(15px, 1.6vw, 17px); }
+.btn-primary:hover { background: #c25a00; border-color: #c25a00; }
 .btn-line { background: var(--line-green); color: #fff; font-size: clamp(13px, 1.5vw, 15px); min-height: 50px; }
-.btn-header { font-family: var(--font-display); font-weight: 700; font-size: clamp(12px, 1.4vw, 14px); color: #fff; background: var(--forest-700); padding: 10px 18px; border-radius: 6px; text-decoration: none; }
+.btn-header { font-family: var(--font-display); font-weight: 700; font-size: clamp(12px, 1.4vw, 14px); color: #fff; background: #E36900; padding: 10px 18px; border-radius: 6px; text-decoration: none; }
 
 /* ---- チップ / タグ ---- */
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
