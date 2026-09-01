@@ -174,3 +174,26 @@ a { color: inherit; }
 .footer .logo { width: auto; height: 26px; margin-bottom: 10px; }
 .footer p { font-size: clamp(12px, 1.3vw, 13px); line-height: 1.8; color: rgba(244,241,234,0.75); }
 .footer .copy { font-size: 11px; color: rgba(244,241,234,0.45); }
+
+/* ---- ロゴのリンク化（ヘッダー・フッター共通） ---- */
+.brand-link { display: inline-flex; align-items: center; text-decoration: none; }
+.brand-link:hover { opacity: 0.8; }
+.footer-links { margin-top: 10px; font-size: clamp(12px, 1.3vw, 13px); }
+.footer-links a { color: rgba(244,241,234,0.75); text-decoration: underline; }
+.footer-links a:hover { color: #fff; }
+
+/* ---- サンクスページ（thanks/） ---- */
+.thanks { text-align: center; padding: clamp(56px, 8vw, 104px) clamp(16px, 4vw, 32px) clamp(40px, 5vw, 64px); }
+.thanks-badge { display: inline-flex; align-items: center; justify-content: center; width: 72px; height: 72px; margin: 0 auto 24px; border-radius: 50%; background: var(--forest-50); color: var(--forest-600); font-size: 34px; line-height: 1; }
+.thanks-h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(24px, 3.4vw, 38px); line-height: 1.5; color: var(--ink-900); margin-bottom: 20px; }
+.thanks-lead { font-size: clamp(15px, 1.6vw, 17px); line-height: 1.9; color: var(--ink-700); max-width: 640px; margin: 0 auto; }
+.thanks-note { margin-top: 18px; font-size: clamp(13px, 1.4vw, 14px); line-height: 1.8; color: var(--ink-500); max-width: 640px; margin-left: auto; margin-right: auto; }
+.steps { max-width: 640px; margin: 0 auto; padding: 0; list-style: none; text-align: left; counter-reset: step; }
+.steps li { position: relative; padding: 0 0 24px 52px; counter-increment: step; }
+.steps li:not(:last-child)::after { content: ""; position: absolute; left: 17px; top: 34px; bottom: 4px; width: 2px; background: var(--paper-200); }
+.steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 36px; height: 36px; border-radius: 50%; background: var(--forest-700); color: #fff; font-family: var(--font-latin); font-weight: 700; font-size: 15px; display: flex; align-items: center; justify-content: center; }
+.steps h3 { font-family: var(--font-display); font-weight: 700; font-size: clamp(15px, 1.7vw, 17px); color: var(--ink-900); margin-bottom: 6px; padding-top: 7px; }
+.steps p { font-size: clamp(13px, 1.4vw, 14.5px); line-height: 1.85; color: var(--ink-700); }
+.thanks-cta { max-width: 420px; margin: 0 auto; display: grid; gap: 12px; }
+.btn-outline { background: transparent; color: var(--forest-700); border: 1.5px solid var(--forest-700); font-size: clamp(14px, 1.5vw, 15px); min-height: 50px; }
+.btn-outline:hover { background: var(--forest-50); }
