@@ -197,3 +197,13 @@ a { color: inherit; }
 .thanks-cta { max-width: 420px; margin: 0 auto; display: grid; gap: 12px; }
 .btn-outline { background: transparent; color: var(--forest-700); border: 1.5px solid var(--forest-700); font-size: clamp(14px, 1.5vw, 15px); min-height: 50px; }
 .btn-outline:hover { background: var(--forest-50); }
+
+/* ---- 追従CTA（スマホ優先。PCはヘッダーの予約ボタンが常時見えるため非表示） ---- */
+.sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; background: rgba(255, 255, 255, 0.97); border-top: 1px solid var(--paper-200); box-shadow: 0 -6px 20px rgba(18, 42, 26, 0.10); padding: 10px 14px; padding-bottom: calc(10px + env(safe-area-inset-bottom)); visibility: hidden; transform: translateY(110%); transition: transform 240ms ease, visibility 0s linear 240ms; }
+.sticky-cta.is-visible { visibility: visible; transform: translateY(0); transition: transform 240ms ease, visibility 0s; }
+.sticky-cta-inner { display: flex; gap: 10px; max-width: 560px; margin: 0 auto; }
+.sticky-cta .btn { flex: 1 1 0; min-height: 50px; padding: 0 10px; white-space: nowrap; }
+.sticky-cta .btn-primary { flex: 1.7 1 0; font-size: clamp(14px, 3.7vw, 16px); }
+.sticky-cta .btn-line { font-size: clamp(13px, 3.4vw, 15px); }
+@media (min-width: 901px) { .sticky-cta { display: none; } }
+@media (prefers-reduced-motion: reduce) { .sticky-cta { transition: none; } }
